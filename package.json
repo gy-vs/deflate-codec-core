@@ -1,0 +1,20 @@
+{
+  "name": "seekzip",
+  "version": "0.1.0",
+  "description": "自带跳转索引的 gzip/DEFLATE 编解码库（纯 TypeScript 实现，无第三方压缩库依赖）",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test dist/test/",
+    "bench": "tsc -p tsconfig.json && node dist/benchmarks/realistic.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "typescript": "^5.4.0"
+  }
+}
